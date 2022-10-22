@@ -7,6 +7,11 @@ Login into your AWS Console
 Create a Key pair with name "Linux" and key file format ".pem"
 Download pem file into your local machine
 
+########
+    1. Navigate to the EC2 Console and open Network and security, then choose Key Pairs and create key pair
+    2. 
+########
+
 Step 3(Create Security group)
 Create a Security Group with name “PublicSG” and give it any description you prefer
 Select your default VPC
@@ -30,7 +35,9 @@ yum update -y
 yum install -y httpd
 systemctl start httpd
 systemctl enable httpd
-echo "Hello World from $(hostname -f)" > /var/www/html/index.html
+echo "Hello World from $(hostname -f)" > /var/www/html/index.html {
+    for this line I added some personal notes to make the HTML mine.
+}
 echo "Healthy" > /var/www/html/health.html
 Click create launch template
 
